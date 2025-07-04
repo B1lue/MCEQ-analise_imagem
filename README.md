@@ -42,39 +42,40 @@ python Pipeline_distortion.py
 ```
 4. Análise Interativa
 Abra o notebook test_run.ipynb para análises detalhadas.
+
 📊 Tipos de Distorções Analisadas
-Distorção
-Descrição
-Parâmetros
-🌫️ Ruído Gaussiano
-Adiciona ruído aleatório
-mean=10, std=10
-🌀 Blur Gaussiano
-Desfoque da imagem
-kernel=(11,11)
-⚫ Escala de Cinza
-Conversão para grayscale
--
-🔄 Efeito Negativo
-Inversão de cores
--
-🔍 Zoom
-Ampliação da imagem
-fator=1.5
+Distorção	Descrição	Parâmetros
+🌫️ Ruído Gaussiano	Adiciona ruído aleatório	mean=10, std=10
+🌀 Blur Gaussiano	Desfoque da imagem	kernel=(11,11)
+⚫ Escala de Cinza	Conversão para grayscale	-
+🔄 Efeito Negativo	Inversão de cores	-
+🔍 Zoom	Ampliação da imagem	fator=1.5
 📈 Métricas e Visualizações
 Métricas Calculadas
-SSIM (Structural Similarity Index): Mede a similaridade estrutural
-Top-1 Accuracy: Precisão da classificação
-F1-Score: Métrica balanceada de classificação
-Precision: Precisão das predições
+
+    SSIM (Structural Similarity Index): Mede a similaridade estrutural entre imagens.
+
+    Top-1 Accuracy: Precisão da classificação no melhor resultado.
+
+    F1-Score: Métrica balanceada que combina precisão e recall.
+
+    Precision: Precisão das predições feitas pelo modelo.
+
 Tipos de Gráficos
-📊 Gráfico de Barras: Precisão média por classe
-🎻 Violin Plot: Distribuição da precisão por classe
-🌈 Density Plot: Relação entre SSIM e precisão com mapa de calor
+
+    📊 Gráfico de Barras: Exibe a precisão média por classe.
+
+    🎻 Violin Plot: Mostra a distribuição da precisão por classe.
+
+    🌈 Density Plot: Representa a relação entre SSIM e precisão usando um mapa de calor.
+
 Interpretação dos Gráficos de Densidade
-Cores mais escuras: Maior concentração de dados
-Cores mais claras: Menor concentração de dados
-Barra de cores: Indica a densidade relativa dos pontos
+
+    Cores mais escuras: Maior concentração de dados.
+
+    Cores mais claras: Menor concentração de dados.
+
+    Barra de cores: Indica a densidade relativa dos pontos no gráfico.
 
 🔬 Funcionalidades Principais
 classifier.py
