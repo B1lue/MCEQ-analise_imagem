@@ -31,26 +31,17 @@ Este projeto avalia como diferentes tipos de distorções de imagem afetam a per
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)
 
 
-
-
-
 - **TensorFlow/Keras**: Modelo ResNet50 pré-treinado
-
 
 - **OpenCV**: Processamento de imagens
 
-
 - **Scikit-image**: Cálculo de métricas SSIM
-
 
 - **Pandas**: Manipulação de dados
 
-
 - **Matplotlib/Seaborn**: Visualização de dados
 
-
 - **Scikit-learn**: Métricas de avaliação
-
 
 
 🚀 Como Usar
@@ -61,12 +52,8 @@ Este projeto avalia como diferentes tipos de distorções de imagem afetam a per
 Organize suas imagens nos diretórios train/ e val/ seguindo a estrutura:
 
 ```bash
-
-
 train/n01440764/
-
 val/n01440764/
-
 
 ```
 
@@ -78,9 +65,7 @@ val/n01440764/
 
 
 ```bash
-
 python Pipeline_distortion.py
-
 ```
 
 
@@ -91,30 +76,16 @@ Abra o notebook test_run.ipynb para análises detalhadas.
 
 
 
-
-
 📊 Tipos de Distorções Analisadas
 
-
 | Distorção               | Descrição                | Parâmetros        |
-
-
 | ----------------------- | ------------------------ | ----------------- |
-
-
 | 🌫️ **Ruído Gaussiano** | Adiciona ruído aleatório | `mean=10, std=10` |
-
-
 | 🌀 **Blur Gaussiano**   | Desfoque da imagem       | `kernel=(11,11)`  |
-
-
 | ⚫ **Escala de Cinza**   | Conversão para grayscale | -                 |
-
-
 | 🔄 **Efeito Negativo**  | Inversão de cores        | -                 |
-
-
 | 🔍 **Zoom**             | Ampliação da imagem      | `fator=1.5`       |
+
 
 
 
