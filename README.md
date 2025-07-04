@@ -44,13 +44,14 @@ python Pipeline_distortion.py
 Abra o notebook test_run.ipynb para análises detalhadas.
 
 📊 Tipos de Distorções Analisadas
-Distorção	Descrição	Parâmetros
-🌫️ Ruído Gaussiano	Adiciona ruído aleatório	mean=10, std=10
-🌀 Blur Gaussiano	Desfoque da imagem	kernel=(11,11)
-⚫ Escala de Cinza	Conversão para grayscale	-
-🔄 Efeito Negativo	Inversão de cores	-
-🔍 Zoom	Ampliação da imagem	fator=1.5
-📈 Métricas e Visualizações
+| Distorção               | Descrição                | Parâmetros        |
+| ----------------------- | ------------------------ | ----------------- |
+| 🌫️ **Ruído Gaussiano** | Adiciona ruído aleatório | `mean=10, std=10` |
+| 🌀 **Blur Gaussiano**   | Desfoque da imagem       | `kernel=(11,11)`  |
+| ⚫ **Escala de Cinza**   | Conversão para grayscale | -                 |
+| 🔄 **Efeito Negativo**  | Inversão de cores        | -                 |
+| 🔍 **Zoom**             | Ampliação da imagem      | `fator=1.5`       |
+
 Métricas Calculadas
 
     SSIM (Structural Similarity Index): Mede a similaridade estrutural entre imagens.
